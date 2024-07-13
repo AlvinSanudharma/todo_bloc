@@ -104,6 +104,12 @@ class _TodoPageState extends State<TodoPage> {
             return const SizedBox.shrink();
           }
 
+          if (state is TodoLoading) {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+
           List<Todo> list = state.todos;
 
           return ListView.builder(

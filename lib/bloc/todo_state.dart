@@ -11,6 +11,10 @@ final class TodoInitial extends TodoState {
   TodoInitial(super.todos);
 }
 
+final class TodoLoading extends TodoState {
+  TodoLoading(super.todos);
+}
+
 final class TodoAdded extends TodoState {
   TodoAdded(super.todos);
 }
